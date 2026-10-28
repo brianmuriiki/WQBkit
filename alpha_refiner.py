@@ -5,20 +5,20 @@ from openrouter_client import ask_ai
 from wqbkit.app.database.schemas import FactorData
 
 def refine_alpha(
-expression: str,
-region: str,
-universe: str,
-neutralization: str,
-decay: int,
-sharpe: float,
-fitness: float,
-drawdown: float,
-twoyearsharpe: float,
-generation: int = 0,
-factor_id: int | None = None,
+  expression: str,
+  region: str,
+  universe: str,
+  neutralization: str,
+  decay: int,
+  sharpe: float,
+  fitness: float,
+  drawdown: float,
+  twoyearsharpe: float,
+  generation: int = 0,
+  factor_id: int | None = None,
 ) -> list[str]:
     
-"""Generate alpha refinement proposals using actual simulation metrics."""
+ """Generate alpha refinement proposals using actual simulation metrics."""
 
 prompt = f"""
 ```
